@@ -1,0 +1,754 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Josh Michael Rey Galeos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+   <!-- Google Font: Orbitron -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<!-- Add inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Share+Tech+Mono&family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section class="hero">
+  <h1>Hello, I'm Josh</h1>
+  <p class="typewriter-text"><strong id="typed-line"></strong></p>
+
+
+  <!-- Top Right Fixed Controls -->
+<div class="top-right-controls">
+  <!-- Autobot Toggle -->
+  <button class="invert-btn" id="invertToggle" aria-label="Toggle Theme">
+    <img src="autobots.png" alt="Autobot Toggle" class="autobot-icon" />
+  </button>
+
+
+ 
+  <!-- Optimus Sound Button -->
+  <div class="optimus-sound-wrapper">
+    <button onclick="playOptimusVoice()" class="hear-optimus-btn" aria-label="Hear Optimus">
+      <i class="fas fa-volume-up"></i>
+    </button>
+  </div>
+</div>
+
+  <div id="soundwave" class="soundwave">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
+<a href="juicexyzresume.pdf" class="btn" download>
+  <i class="fas fa-download"></i> Download Resume
+</a>
+
+<!-- Floating Center Navigation -->
+<div class="center-nav-floating shadow-lg rounded-4 p-3">
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#aboutModal">
+    <i class="fas fa-robot fa-2x"></i>
+    <span>About</span>
+  </div>
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#projectsModal">
+    <i class="fas fa-cogs fa-2x"></i>
+    <span>Projects</span>
+  </div>
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#skillsModal">
+    <i class="fas fa-bolt fa-2x"></i>
+    <span>Skills</span>
+  </div>
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#educationModal">
+    <i class="fas fa-chalkboard-teacher fa-2x"></i>
+    <span>Education</span>
+  </div>
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#contactModal">
+    <i class="fas fa-link fa-2x"></i>
+    <span>Links</span>
+  </div>
+  <div class="nav-item" data-bs-toggle="modal" data-bs-target="#realContactModal">
+    <i class="fas fa-paper-plane fa-2x"></i>
+    <span>Contact</span>
+  </div>
+</div>
+
+
+
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-custom-scroll" style="max-width: 800px; width: 95%;">
+    <div class="modal-content text-white bg-dark px-3 px-md-4 py-3 rounded-4 shadow-lg border border-warning"
+         style="box-shadow: 0 0 25px rgb(255, 255, 0); backdrop-filter: blur(8px);">
+
+      <!-- Modal Header -->
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold fs-5 text-warning" id="aboutModalLabel">About Me</h5>
+<button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+</div>
+
+
+      <!-- Modal Body -->
+      <div class="modal-body d-flex flex-column flex-md-row gap-4 pt-3">
+
+        <!-- Profile Image -->
+        <div class="text-center text-md-start flex-shrink-0">
+          <img src="IMG_8020.jpeg" alt="Josh Michael Rey Galeos" class="rounded-3 shadow" style="max-width: 140px;" />
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex-grow-1">
+
+          <!-- Name + Motto -->
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+            <h6 class="text-white fw-semibold mb-0 fs-6">Josh Michael Rey Galeos</h6>
+            <button class="btn btn-outline-warning btn-sm py-1 px-2" onclick="toggleMotto()">💬 View Motto</button>
+          </div>
+
+          <!-- Bio -->
+          <p class="mb-3 small bio-text" style="font-size: 0.8rem; color: #ddd;">
+            <strong>Bio:</strong> I'm an IT student passionate about coding, design, and music. As a junior game developer, I specialize in web development, UI/UX, and building small games in Godot—crafting code like composing a song: clean, creative, and functional.
+
+
+          </p>
+
+      <!-- Highlights -->
+<ul class="list-unstyled small mb-0" style="flex: 1;">
+  <li><strong>Passion:</strong> Web Design + Game Development</li>
+  <li><strong>Code Playlist:</strong> Lo-fi • OPM • EDM</li>
+  <li><strong>Strengths:</strong> Frontend UI • CSS • Java • MySQL • Arduino (Expert)</li>
+  <li><strong>Tools:</strong> VS Code • Arduino • Godot • Java NetBeans</li>
+  <li><strong>Learning Focus:</strong> Cybersecurity Fundamentals</li>
+</ul>
+
+
+
+          <!-- Spotify -->
+          <div class="mt-4">
+            <p class="small mb-1 fw-semibold">My Spotify Playlist</p>
+            <a href="https://open.spotify.com/playlist/78sxCFXRXknOBI8w55yghy" target="_blank" class="btn btn-success btn-sm">
+              <i class="fab fa-spotify"></i> Listen on Spotify
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Floating Motto Box -->
+<div id="mottoFloatingBox" class="motto-floating" style="display: none;">
+  <div class="motto-header">
+    💬 My Motto
+    <button type="button" class="custom-close-btn" onclick="closeMottoBox()" aria-label="Close">&times;</button>
+  </div>
+  <div class="motto-content">
+    <p>"Kung naglabas ng Motibo, ilabas ang embotido."</p>
+  </div>
+</div>
+
+
+<!-- Projects Modal (Minimalist Carousel) -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 480px;">
+    <div class="modal-content bg-dark text-white rounded-4 shadow-lg border border-warning">
+
+      <!-- Modal Header -->
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title text-warning" id="projectsModalLabel">💼 Projects</h5>
+ <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+</div>
+
+      <!-- Modal Body -->
+      <div class="modal-body pt-2">
+
+        <!-- Click Sound -->
+        <audio id="carouselClickSound" src="mixkit-sci-fi-click-900.wav" preload="auto"></audio>
+
+        <!-- Carousel -->
+        <div id="projectCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+          <!-- Slides -->
+          <div class="carousel-inner rounded-3">
+            <!-- Slide 1 -->
+            <div class="carousel-item active text-center p-3">
+              <img src="coding.jpg" class="img-fluid rounded mb-2 d-block mx-auto" style="max-height: 160px;" alt="Web Portfolio">
+              <h6 class="text-warning mb-0">Web-Based Portfolio</h6>
+              <p class="small text-light">
+                A sleek web-based audio player featuring playlist control, responsive UI, and smooth playback—built for an immersive listening experience.
+              </p>
+            </div>  
+
+            <!-- Slide 2 -->
+            <div class="carousel-item text-center p-3">
+              <img src="godot-logo-png_seeklogo-500794.png" class="img-fluid rounded mb-2 d-block mx-auto" style="max-height: 160px;" alt="Ping-Pong 2D">
+              <h6 class="text-warning mb-0">Ping-Pong 2D</h6>
+              <p class="small text-light">
+                A simple 2D ping-pong game created using the Godot Engine.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item text-center p-3">
+              <img src="images.jpg" class="img-fluid rounded mb-2 d-block mx-auto" style="max-height: 160px;" alt="Arduino Sensor">
+              <h6 class="text-warning mb-0">Arduino Temp Sensor</h6>
+              <p class="small text-light">
+                Reads and displays real-time temperature using a basic Arduino setup.
+              </p>
+            </div>
+          </div>
+
+          <!-- Controls (INSIDE the Carousel) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-warning rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-warning rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div> <!-- End Carousel -->
+
+      </div> <!-- End Modal Body -->
+
+    </div> <!-- End Modal Content -->
+  </div> <!-- End Modal Dialog -->
+</div>
+
+
+
+
+
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+               
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Skills Modal -->
+<div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
+    <div class="modal-content bg-dark px-3 py-2 rounded-4 shadow-lg border border-warning">
+
+      <!-- Modal Header -->
+      <div class="modal-header border-0 py-2">
+        <h5 class="modal-title text-warning fw-bold fs-6" id="skillsModalLabel">Skills</h5>
+       <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+</div>
+
+
+      <!-- Modal Body -->
+      <div class="modal-body py-2 px-2">
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+
+          <!-- Skill Icons -->
+          <div class="skill-btn" onmouseenter="showSkillInfo('html', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('html', event)">
+            <i class="fab fa-html5 text-danger fa-lg" title="HTML"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('css', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('css', event)">
+            <i class="fab fa-css3-alt text-primary fa-lg" title="CSS"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('js', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('js', event)">
+            <i class="fab fa-js text-warning fa-lg" title="JavaScript"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('java', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('java', event)">
+            <i class="fas fa-coffee text-brown fa-lg" title="Java"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('cpp', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('cpp', event)">
+            <i class="fas fa-code text-info fa-lg" title="C++"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('arduino', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('arduino', event)">
+            <i class="fas fa-microchip text-success fa-lg" title="Arduino"></i>
+          </div>
+          <div class="skill-btn" onmouseenter="showSkillInfo('godot', event)" onmouseleave="scheduleHideSkillInfo()" onclick="showSkillInfo('godot', event)">
+            <i class="fas fa-gamepad text-light fa-lg" title="Godot"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Education Modal (Landscape Style) -->
+<div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 900px;"> <!-- Wider -->
+    <div class="modal-content custom-edu-modal p-4 d-flex flex-row align-items-start gap-4">
+
+      <!-- Icon/Left Column -->
+      <div class="text-center flex-shrink-0" style="width: 180px;">
+        <i class="fas fa-graduation-cap fa-3x text-warning glowing-icon"></i>
+        <h5 class="custom-modal-title mt-3">Education</h5>
+        <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+      </div>
+
+      <!-- Content/Right Column -->
+      <div class="modal-body p-0 flex-grow-1">
+
+        <!-- Progress -->
+        <label class="text-warning fw-semibold">Progress to Graduation</label>
+        <div class="progress bg-secondary rounded-5 mb-4" style="height: 10px;">
+  <div class="progress-bar bg-warning progress-animate" style="width: 0%;"></div>
+</div>
+>
+
+        <!-- Timeline -->
+        <div class="education-timeline">
+          <!-- College -->
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <div>
+              <p class="text-warning fw-bold mb-1">2025 – Present</p>
+              <p>Bachelor of Science in Information Technology<br>
+               <span class="small text-white">St. Mary's College of Bansalan</span>
+
+            </div>
+          </div>
+
+          <!-- Senior High -->
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <div>
+              <p class="text-warning fw-bold mb-1">2020 – 2022</p>
+              <p>Senior High School – GAS STRAND<br>
+                <span class="small text-white">Magsaysay Academy Inc.</span>
+            </div>
+          </div>
+
+          <!-- Junior High -->
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <div>
+              <p class="text-warning fw-bold mb-1">2015 – 2019</p>
+              <p>Junior High School<br>
+                 <span class="small text-white">Holy Cross of Magsaysay Inc.</span>
+
+            </div>
+          </div>
+
+          <!-- Elementary -->
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <div>
+              <p class="text-warning fw-bold mb-1">2010 – 2015</p>
+              <p>Elementary Education<br>
+                <span class="small text-white">Magsaysay Central Elemtary School</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End modal-content -->
+  </div>
+</div>
+
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-contact-modal text-white p-4">
+      <!-- Custom Close Button -->
+      <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+
+      <!-- Title -->
+      <div class="text-center mb-3">
+        <h5 class="modal-title custom-modal-title" id="contactModalLabel"> Links</h5>
+      </div>
+
+     <!-- Icons -->
+<div class="modal-body d-flex justify-content-center gap-4 flex-wrap">
+  <!-- Facebook -->
+  <a href="https://facebook.com/Nairiexyz" target="_blank" class="contact-icon-link" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@juicexyz" target="_blank" class="contact-icon-link" aria-label="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  
+  <!-- GitHub -->
+  <a href="https://github.com/galeosjoshmichaelrey-bot" target="_blank" class="contact-icon-link" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Modal -->
+<div class="modal fade" id="realContactModal" tabindex="-1" aria-labelledby="realContactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content real-contact-modal">
+      
+      <!-- Modal Header with Custom Close Button -->
+<div class="modal-header border-0">
+  <h5 class="modal-title" id="realContactModalLabel">Get in Touch</h5>
+  <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+</div>
+
+      <!-- Modal Body with Contact Options -->
+      <div class="modal-body d-flex justify-content-center gap-3 flex-wrap">
+        <!-- Email -->
+        <a href="galeosjoshmichaelrey@smcbi.edu.ph" class="contact-icon-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <!-- Phone -->
+        <a href="09486370217" class="contact-icon-link" aria-label="Phone">
+          <i class="fas fa-phone-alt"></i>
+        </a>
+        <!-- Messenger -->
+        <a href="@Nairiexyz" class="contact-icon-link" target="_blank" aria-label="Messenger">
+          <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/galeosjoshmichaelrey-bot" class="contact-icon-link" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Invert Theme Toggle -->
+    <script>
+      const toggle = document.getElementById("invertToggle");
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("invert-theme");
+      });
+    </script>
+<audio id="click-sound" src="mixkit-sci-fi-click-900.wav" preload="auto"></audio>
+
+<script>
+  const clickSound = document.getElementById("click-sound");
+
+  // Play sound for nav items
+  document.querySelectorAll(".nav-item").forEach(item => {
+    item.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+
+  // Play sound for toggle button too
+  const toggleBtn = document.querySelector(".invert-btn");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  }
+</script>
+<script>
+  const mottoBox = document.getElementById('mottoFloatingBox');
+  const mottoBtn = document.querySelector('[onclick="toggleMotto()"]');
+
+  function closeMottoBox() {
+    mottoBox.style.display = 'none';
+    document.removeEventListener('click', outsideClickHandler);
+  }
+
+  function toggleMotto() {
+    const isVisible = mottoBox.style.display === 'block';
+    mottoBox.style.display = isVisible ? 'none' : 'block';
+
+    // Set up outside click handler
+    if (!isVisible) {
+      setTimeout(() => {
+        document.addEventListener('click', outsideClickHandler);
+      }, 0);
+    } else {
+      document.removeEventListener('click', outsideClickHandler);
+    }
+  }
+
+  function outsideClickHandler(e) {
+    if (!mottoBox.contains(e.target) && !mottoBtn.contains(e.target)) {
+      closeMottoBox();
+    }
+  }
+</script>
+<audio id="click-sound" src="mixkit-sci-fi-click-900.wav" preload="auto"></audio>
+<script>
+  const phrases = [
+  "Web Developer",
+  "UI Designer",
+  "Tech Explorer"
+];
+
+
+  let i = 0;
+  let j = 0;
+  let currentPhrase = [];
+  let isDeleting = false;
+  const typedLine = document.getElementById('typed-line');
+
+  function loop() {
+    typedLine.innerHTML = currentPhrase.join('');
+
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase.push(phrases[i][j]);
+      j++;
+    }
+
+    if (isDeleting && j > 0) {
+      currentPhrase.pop();
+      j--;
+    }
+
+    if (j === phrases[i].length) {
+      isDeleting = true;
+      setTimeout(loop, 1000);
+      return;
+    }
+
+    if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % phrases.length;
+    }
+
+    setTimeout(loop, isDeleting ? 50 : 100);
+  }
+
+  loop();
+</script>
+
+
+<!-- Scripts -->
+<script>
+  const optimusQuotes = [
+    'optimus1.mp3',
+    'optimus2.mp3',
+    'optimus3.mp3',
+    'optimus4.mp3',
+    'optimus5.mp3',
+    'optimus6.mp3',
+    'optimus7.mp3'
+  ];
+
+  let currentAudio = null;
+
+  function playOptimusVoice() {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    const randomIndex = Math.floor(Math.random() * optimusQuotes.length);
+    currentAudio = new Audio(optimusQuotes[randomIndex]);
+
+    const soundwave = document.getElementById('soundwave');
+
+    currentAudio.addEventListener('play', () => {
+      if (soundwave) soundwave.style.display = 'flex';
+    });
+
+    currentAudio.addEventListener('ended', () => {
+      if (soundwave) soundwave.style.display = 'none';
+    });
+
+    currentAudio.addEventListener('pause', () => {
+      if (soundwave) soundwave.style.display = 'none';
+    });
+
+    currentAudio.play().catch(error => {
+      console.warn("Audio error or autoplay blocked:", error);
+      if (soundwave) soundwave.style.display = 'none';
+    });
+  }
+
+  // Optional: allow autoplay on first click (some browsers require this)
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', () => {
+      playOptimusVoice();
+    }, { once: true });
+  });
+</script>
+
+</script>
+<script>
+  const audio = document.getElementById("carouselClickSound");
+
+  document.querySelectorAll('#projectCarousel .carousel-control-prev, #projectCarousel .carousel-control-next')
+    .forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Rewind to start and play
+        audio.currentTime = 0;
+        audio.play();
+      });
+    });
+</script>
+
+<script>
+ const skillDescriptions = {
+  html: "I created a full website layout using semantic HTML, including navbars, sections, modals, and form elements.",
+  css: "I designed a custom website theme with responsive layout, animations, and hover effects — all using pure CSS.",
+  js: "I use JavaScript to add interactivity like modals, button triggers, audio feedback, DOM effects, and creative logic.",
+  java: "Back in 1st year, I created a registration system in Java using NetBeans — applying OOP concepts, input validation, and basic file handling.",
+  cpp: "I’ve used C++ in the past for basic programming exercises and logic activities in school. I’m still learning and actively practicing to improve my skills.",
+  arduino: "I helped build a custom Arduino controller for a 2D ping-pong game — wiring buttons and working with serial input to connect with our game.",
+  godot: "I collaborated with my co-dev Ed Castillion to develop a 2D ping-pong game in Godot, where I focused on gameplay logic and Arduino integration using GDScript."
+};
+
+
+let hideTimeout = null;
+
+function showSkillInfo(skillKey, event) {
+  clearTimeout(hideTimeout);
+
+  const box = document.getElementById("skillInfoBox");
+  const title = document.getElementById("skillTitle");
+  const desc = document.getElementById("skillDescription");
+
+  title.textContent = skillKey.toUpperCase();
+  desc.textContent = skillDescriptions[skillKey] || "No description available.";
+
+  const padding = 12;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const centerX = rect.left + rect.width / 2 + window.scrollX;
+  const bottomY = rect.bottom + window.scrollY + padding;
+
+  box.style.left = `${centerX}px`;
+  box.style.top = `${bottomY}px`;
+  box.style.transform = "translateX(-50%)";
+
+  box.style.display = "block";
+  requestAnimationFrame(() => {
+    box.style.opacity = "1";
+    box.style.animation = "transformersPop 0.3s ease";
+  });
+}
+
+function scheduleHideSkillInfo() {
+  hideTimeout = setTimeout(() => {
+    const box = document.getElementById("skillInfoBox");
+    box.style.opacity = "0";
+    setTimeout(() => {
+      box.style.display = "none";
+    }, 300);
+  }, 150);
+}
+
+function cancelHideSkillInfo() {
+  clearTimeout(hideTimeout);
+}
+
+document.addEventListener("click", (e) => {
+  const box = document.getElementById("skillInfoBox");
+  if (!box.contains(e.target) && !e.target.closest('.skill-btn')) {
+    box.style.opacity = "0";
+    setTimeout(() => box.style.display = "none", 300);
+  }
+});
+</script>
+<!-- Floating Skill Info Box -->
+<div id="skillInfoBox" class="skill-info-box" style="display: none; opacity: 0;">
+  <h6 id="skillTitle" class="mb-1 text-warning fw-semibold" style="font-size: 0.75rem;">Skill</h6>
+  <p id="skillDescription" class="mb-0 text-white" style="font-size: 0.68rem; line-height: 1.2;"></p>
+</div>
+
+
+
+<script>
+  const educationModal = document.getElementById('educationModal');
+  educationModal.addEventListener('shown.bs.modal', function () {
+    const bar = educationModal.querySelector('.progress-animate');
+    bar.style.width = '60%'; // Animate to 60%
+  });
+
+  // Optional: Reset when hidden (for replay effect)
+  educationModal.addEventListener('hidden.bs.modal', function () {
+    const bar = educationModal.querySelector('.progress-animate');
+    bar.style.width = '0%';
+  });
+</script>
+
+<script>
+  let screenClickCount = 0;
+  let screenClickTimer = null;
+  const secretSound = new Audio('system-scan.mp3'); // Replace with your sound file
+
+  document.addEventListener("click", () => {
+    screenClickCount++;
+
+    if (screenClickCount === 1) {
+      screenClickTimer = setTimeout(() => {
+        screenClickCount = 0;
+      }, 800); // 800ms window to complete 5 clicks
+    }
+
+    if (screenClickCount === 5) {
+      clearTimeout(screenClickTimer);
+      screenClickCount = 0;
+
+      // Play secret sound
+      secretSound.volume = 0.7;
+      secretSound.play();
+
+      // Flash effect
+      document.body.classList.add("system-flash");
+      setTimeout(() => {
+        document.body.classList.remove("system-flash");
+      }, 300);
+
+      // Show modal
+      const modal = new bootstrap.Modal(document.getElementById("secretCreditsModal"));
+      modal.show();
+    }
+  });
+</script>
+<script>
+  // Randomize icon position on page load
+  function randomizePosition(icon) {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    const iconSize = 40; // estimated icon size
+
+    const randomX = Math.floor(Math.random() * (viewportWidth - iconSize));
+    const randomY = Math.floor(Math.random() * (viewportHeight - iconSize));
+
+    icon.style.top = randomY + 'px';
+    icon.style.left = randomX + 'px';
+  }
+
+
+  </SCRIPT>
+  
